@@ -41,6 +41,10 @@ function renderDataImgur(data){
             `
          }).join('');
          container.innerHTML = string;
+         lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+          })
     }
 }
 function getClassImage(width = 0,height = 0){
